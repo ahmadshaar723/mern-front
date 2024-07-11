@@ -10,7 +10,7 @@ function RelatedProduct() {
 
 
   useEffect(()=>{
-    fetch('http://localhost:4000/popularproducts').then((resp)=> resp.json()).then((data)=> setPOPULAR(data))
+    fetch('https://mern1-back-1.onrender.com/popularproducts').then((resp)=> resp.json()).then((data)=> setPOPULAR(data))
   },[])
 
   return (
