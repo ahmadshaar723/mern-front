@@ -15,7 +15,7 @@ function Login() {
   const login = async () => {
     
     let responseData;
-    await fetch("http://localhost:4000/login", {
+    await fetch("https://mern1-back-1.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/formData",
@@ -39,7 +39,7 @@ function Login() {
   const signup = async () => {
     console.log(formData);
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://mern1-back-1.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/formData",
