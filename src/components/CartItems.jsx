@@ -11,7 +11,7 @@ function CartItems() {
     let total=0;
   return (
     <section className="max_padd_container pt-28">
-        <table className="w-full mx-auto ">
+      {all_product.length===0?<p className="text-center">Loading...</p>: ( <table className="w-full mx-auto ">
             <thead>
                 <tr className="bg-slate-900/10 regular-14 sm:regular-22 text-start py-12">
                     <th className="p-1 py-2">Products</th>
@@ -46,8 +46,8 @@ function CartItems() {
                     
                 })}
             </tbody>
-        </table>
-        <div className="flex flex-col gap-20 my-16 p-8 md:flex-row rounded-md bg-white w-full max-w-[666px]">
+        </table>)}
+        {all_product.length===0?<p></p>: (  <div className="flex flex-col gap-20 my-16 p-8 md:flex-row rounded-md bg-white w-full max-w-[666px]">
             <div className="flex flex-col gap-10">
                 <h4 className="bold-20">Summary</h4>
                 <div>
@@ -75,7 +75,7 @@ function CartItems() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>)}
     </section>
   )
 }

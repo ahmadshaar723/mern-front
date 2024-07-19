@@ -16,7 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
   return (
     <main className="bg-primary text-tertiary">
-      <BrowserRouter>
+     
       <ScrollToTop/>
        <Header />
        
@@ -33,7 +33,7 @@ export default function App() {
         <Route path="/login" element={<Login/>}/>
        </Routes>
        <Footer/>
-      </BrowserRouter>
+      
       
     </main>
   )
